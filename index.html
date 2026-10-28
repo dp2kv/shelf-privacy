@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; Shelf</title>
+<meta name="description" content="Privacy policy for Shelf, an Android file manager and local-network file transfer app. No servers, no accounts, no analytics.">
+<style>
+  :root {
+    --brand: #1B5E9B;
+    --ink: #1a1c1e;
+    --muted: #5a6066;
+    --line: #dfe3e8;
+    --bg: #ffffff;
+    --panel: #f5f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --brand: #7fb5e6;
+      --ink: #e6e9ec;
+      --muted: #a8b0b8;
+      --line: #333a41;
+      --bg: #16191c;
+      --panel: #1f2328;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  header {
+    border-bottom: 3px solid var(--brand);
+    margin: 0 0 32px;
+    padding: 48px 0 20px;
+  }
+  h1 { font-size: 2em; line-height: 1.2; margin: 0 0 8px; }
+  h2 {
+    font-size: 1.25em;
+    margin: 44px 0 12px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+  .updated { color: var(--muted); font-size: .95em; margin: 0; }
+  .lede {
+    background: var(--panel);
+    border-left: 4px solid var(--brand);
+    padding: 16px 20px;
+    border-radius: 0 6px 6px 0;
+    margin: 0 0 8px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: .94em;
+  }
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+  }
+  th { background: var(--panel); font-weight: 600; }
+  code {
+    background: var(--panel);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: .88em;
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  }
+  blockquote {
+    margin: 18px 0;
+    padding: 12px 18px;
+    border-left: 4px solid var(--brand);
+    background: var(--panel);
+    color: var(--muted);
+    border-radius: 0 6px 6px 0;
+  }
+  .note { border-left-color: #c77700; }
+  a { color: var(--brand); }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .9em;
+  }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Privacy Policy for Shelf</h1>
+  <p class="updated">Last updated: 28 October 2026</p>
+</header>
+
+<p>Shelf is a file manager and local-network file transfer app for Android
+(package <code>com.shelf.filemanager</code>).</p>
+
+<p class="lede">The short version: <strong>Shelf has no servers, no accounts
+and no analytics.</strong> Nothing you do in this app is sent to the
+developer, because there is nowhere for it to be sent. Every piece of data
+described below stays on your device, or travels directly to another device
+you explicitly choose on your own network.</p>
+
+<h2>1. Information the developer collects</h2>
+
+<p><strong>None.</strong></p>
+
+<p>Shelf contains no analytics SDK, no advertising SDK, no crash reporting
+service and no telemetry of any kind. It does not create an account, ask for
+an email address, or assign you an identifier.</p>
+
+<p>The app's source contains no network address belonging to the developer.
+It cannot phone home, because it has no home to phone.</p>
+
+<h2>2. Information stored on your device</h2>
+
+<p>Shelf keeps the following in its own private storage, readable only by
+Shelf and removed completely when you uninstall it:</p>
+
+<table>
+  <thead>
+    <tr><th>What</th><th>Why</th><th>Where</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Display preferences &mdash; view style, row density, sort order, show hidden/system files, show extensions, photo grid</td>
+      <td>So the app opens the way you left it</td>
+      <td>App-private settings</td>
+    </tr>
+    <tr>
+      <td>Bookmarked folders</td>
+      <td>So your shortcuts persist</td>
+      <td>App-private settings</td>
+    </tr>
+    <tr>
+      <td>Recycle bin settings &mdash; whether it is on, how many days to keep</td>
+      <td>So deletion behaves as you configured</td>
+      <td>App-private settings</td>
+    </tr>
+    <tr>
+      <td>Server configuration &mdash; the sharing settings you choose</td>
+      <td>So you do not reconfigure on every launch</td>
+      <td>App-private settings</td>
+    </tr>
+    <tr>
+      <td>Transfer history &mdash; for each transfer: the other device's name or local address, file name, file size, start and finish time, outcome, and the file's location on your device</td>
+      <td>So you can see what was sent or received, reopen a file, or resend it</td>
+      <td>App-private internal storage</td>
+    </tr>
+    <tr>
+      <td>Vault contents, plus the salt and hash used to verify your vault passphrase</td>
+      <td>So vault files stay encrypted at rest</td>
+      <td>App-private internal storage</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Your vault's encryption key is held in the <strong>Android Keystore</strong>,
+a hardware-backed area managed by the operating system. The app never stores
+your passphrase itself, only a salted hash used to check it.</p>
+
+<p>You can erase all of it at any time: clear the app's history from within
+the app, or use <strong>Settings &rarr; Apps &rarr; Shelf &rarr; Storage
+&rarr; Clear data</strong>, or uninstall the app.</p>
+
+<h2>3. Your files</h2>
+
+<p>Shelf reads and writes files on your device because that is what a file
+manager does. Browsing, copying, moving, renaming, compressing, hashing,
+finding duplicates, analysing storage use and recovering deleted items all
+happen entirely on your device.</p>
+
+<p><strong>Your files are never uploaded anywhere.</strong> No file content,
+file name, or directory listing is transmitted to the developer or any third
+party.</p>
+
+<h2>4. Network use</h2>
+
+<p>Shelf transfers files over your <strong>local network only</strong> &mdash;
+typically your home or office Wi-Fi.</p>
+
+<ul>
+  <li>Transfers go <strong>directly between your device and another device you
+      choose</strong>, by scanning its code or entering its local address. The
+      data does not pass through any intermediate or cloud server.</li>
+  <li>The developer operates <strong>no server</strong> of any kind for this app.</li>
+  <li>When you turn sharing on, Shelf runs a server <strong>on your own
+      device</strong> so other devices on the same network can reach the folders
+      you selected. It stops when you turn it off.</li>
+</ul>
+
+<blockquote class="note"><strong>Please note:</strong> transfers on the local
+network use plain HTTP and FTP and are <strong>not encrypted in
+transit</strong>. Anyone else on the same network who is actively watching
+traffic could potentially observe them.</blockquote>
+
+<p>Shelf does protect <em>access</em>: a direct transfer can be gated behind a
+one-time, expiring offer that the receiving device must authorise with a PIN,
+so an uninvited device on the same network cannot simply help itself. That is
+access control, not encryption &mdash; it decides who may fetch a file, but it
+does not scramble the bytes on the wire.</p>
+
+<p>Use Shelf's sharing features on networks you trust, and turn sharing off
+when you are finished. This is disclosed here deliberately so you can make an
+informed choice.</p>
+
+<h2>5. Permissions, and why each is needed</h2>
+
+<table>
+  <thead>
+    <tr><th>Permission</th><th>Why Shelf needs it</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>All files access</strong> (<code>MANAGE_EXTERNAL_STORAGE</code>)</td>
+      <td>Core file manager functions that must see the whole storage volume:
+          searching your device, finding duplicate files, analysing what is
+          using your space, and the recycle bin, which stores deleted items on
+          the same volume so that deleting is instant and does not need a
+          second copy of the file.</td>
+    </tr>
+    <tr>
+      <td>Internet, network state, Wi-Fi state, local network access</td>
+      <td>To send and receive files over your local network, and to show you
+          the correct address and connection status.</td>
+    </tr>
+    <tr>
+      <td>Notifications</td>
+      <td>To show transfer progress and to tell you when sharing is switched on.</td>
+    </tr>
+    <tr>
+      <td>Foreground service (data sync)</td>
+      <td>So a transfer in progress is not killed by the system when you switch apps.</td>
+    </tr>
+    <tr>
+      <td>Keep awake (<code>WAKE_LOCK</code>)</td>
+      <td>So the screen turning off does not interrupt a transfer that is running.</td>
+    </tr>
+    <tr>
+      <td>Read/write external storage (older Android versions only)</td>
+      <td>The equivalent of all files access on Android 9 and below.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Shelf does <strong>not</strong> request access to your contacts, camera roll
+metadata, microphone, location, call logs, or messages.</p>
+
+<h2>6. Third parties</h2>
+
+<p>Shelf shares data with <strong>no third party</strong>, because it collects
+none.</p>
+
+<p>The app is built with open-source libraries (AndroidX, Jetpack Compose,
+OkHttp, Ktor, ZXing, Apache Commons Net). These run entirely on your device and
+none of them transmit data to their authors or to the developer.</p>
+
+<h2>7. Children</h2>
+
+<p>Shelf is a general-purpose utility. It does not knowingly collect
+information from anyone, of any age, because it does not collect information
+at all.</p>
+
+<h2>8. Changes to this policy</h2>
+
+<p>If this policy changes, the updated version will be published at this
+address and the "Last updated" date above will change. Material changes will
+also be noted in the app's release notes.</p>
+
+<h2>9. Contact</h2>
+
+<p>Questions about this policy or about privacy in Shelf:</p>
+
+<p><strong><a href="mailto:prakash3300@gmail.com">prakash3300@gmail.com</a></strong></p>
+
+<footer>
+  Shelf &mdash; file manager and local file transfer for Android.<br>
+  This policy covers the app published as <code>com.shelf.filemanager</code>.
+</footer>
+
+</main>
+</body>
+</html>
